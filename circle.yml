@@ -1,6 +1,17 @@
 dependencies:
   pre: 
+    - sudo apt-get install node
+    - sudo ln -s /usr/bin/nodejs /usr/bin/node
+    - wget http://npmjs.org/install.sh
+    - sudo apt-get install curl
+    - sudo sh install.sh
     - pip install grip
     - pip install tabulate
     - pip install wheel
     - pip install scikit-learn
+    - pip install scikit-learn
+    - pip install numpy
+    - pip install scipy
+    - pip install pandas
+    - pip install statsmodels
+    - pip install patsy
