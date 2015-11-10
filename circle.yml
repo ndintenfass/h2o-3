@@ -2,10 +2,8 @@ dependencies:
   pre: 
     - sudo apt-get install node
     - sudo ln -s /usr/bin/nodejs /usr/bin/node
-    - wget http://npmjs.org/install.sh --no-check-certificate
     - sudo apt-get install curl
     - sudo apt-get update
-    - sudo sh install.sh
     - R CMD INSTALL bitops_x.x-x.tgz
     - R CMD INSTALL RCurl_x.xx-x.x.tgz
     - R CMD INSTALL jsonlite_x.x.xx.tgz
@@ -26,3 +24,10 @@ dependencies:
     - pip install pandas
     - pip install statsmodels
     - pip install patsy
+
+test:
+  override:
+    - ./gradlew syncSmalldata
+    - ./gradlew syncRPackages
+    - ./gradlew clean
+    - ./gradlew build
