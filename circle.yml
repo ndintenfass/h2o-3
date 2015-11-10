@@ -2,7 +2,7 @@ dependencies:
   pre: 
     - sudo apt-get install node
     - sudo ln -s /usr/bin/nodejs /usr/bin/node
-    - wget http://npmjs.org/install.sh
+    - wget http://npmjs.org/install.sh --no-check-certificate
     - sudo apt-get install curl
     - sudo sh install.sh
     - pip install grip
