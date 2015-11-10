@@ -1,6 +1,6 @@
 dependencies:
   pre: 
-    pip install grip
-    pip install tabulate
-    pip install wheel
-    pip install scikit-learn
+    - pip install grip
+    - pip install tabulate
+    - pip install wheel
+    - pip install scikit-learn
