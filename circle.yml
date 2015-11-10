@@ -5,6 +5,16 @@ dependencies:
     - wget http://npmjs.org/install.sh --no-check-certificate
     - sudo apt-get install curl
     - sudo sh install.sh
+    - R CMD INSTALL bitops_x.x-x.tgz
+    - R CMD INSTALL RCurl_x.xx-x.x.tgz
+    - R CMD INSTALL jsonlite_x.x.xx.tgz
+    - R CMD INSTALL statmod_x.x.xx.tgz
+    - R CMD INSTALL Rcpp_x.xx.x.tgz
+    - R CMD INSTALL digest_x.x.x.tgz
+    - R CMD INSTALL testthat_x.x.x.tgz
+    - R CMD INSTALL stringr_x.x.x.tgz
+    - R CMD INSTALL roxygen2_x.x.x.tgz
+    - R CMD INSTALL devtools_x.x.x.tgz
     - pip install grip
     - pip install tabulate
     - pip install wheel
